@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gabrielrufino/RaspberryPocketServer/issues"
   },
-  "homepage": "https://github.com/gabrielrufino/RaspberryPocketServer#readme"
+  "homepage": "https://github.com/gabrielrufino/RaspberryPocketServer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
