@@ -1,7 +1,5 @@
 const express = require('express')
 
-const { PORT } = process.env
-
 const app = express()
 
 app.get('/api', (_request, response) => {
@@ -14,6 +12,8 @@ app.get('/api', (_request, response) => {
 
 module.exports = {
   start: () => {
+    const { PORT } = process.env
+
     app.listen(PORT, () => console.log(`Listening on ${PORT}`))
   }
 }
