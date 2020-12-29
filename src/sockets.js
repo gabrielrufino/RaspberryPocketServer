@@ -7,14 +7,11 @@ const sockets = {
   get watcher() {
     return this._watcher
   },
-  storeSocket (socket) {
-    const { client } = socket.handshake.query
-
-    if (client === 'app') {
-      this._app = socket
-    } else if (client === 'watcher') {
-      this._watcher = socket
-    }
+  set app(socket) {
+    this._app = socket
+  },
+  set watcher(socket) {
+    this._watcher = socket
   }
 }
 
