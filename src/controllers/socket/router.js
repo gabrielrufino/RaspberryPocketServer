@@ -5,6 +5,9 @@ const router = {
     'request:status': () => {
       sockets.watcher.emit('request:status')
     },
+    'request:workflow:restart': () => {
+      sockets.watcher.emit('request:workflow:restart')
+    }
   },
   watcher: {
     'response:status': (data) => {
