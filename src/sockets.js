@@ -1,16 +1,16 @@
 const sockets = {
   _app: null,
   _watcher: null,
-  get app() {
+  get app () {
     return this._app
   },
-  get watcher() {
+  get watcher () {
     return this._watcher
   },
-  set app(socket) {
+  set app (socket) {
     this._app = socket
   },
-  set watcher(socket) {
+  set watcher (socket) {
     this._watcher = socket
   }
 }
